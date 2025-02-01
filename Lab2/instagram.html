@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel="icon" href="https://static.cdninstagram.com/rsrc.php/v4/yI/r/VsNE-OHk_8a.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body{
+            font-size: 14px;
+        }
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .wrapper .header{
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+            margin: 0 10px;
+        }
+        .header:first-child{
+            flex: 1;
+        }
+        .header:nth-child(2){
+            flex: 1;
+        }
+        #screen {
+            height: 550px;
+        }
+        .wrapper .header .top,
+        .wrapper .signup{
+            background: #fff;
+            border: 1px solid #e6e6e6;
+            border-radius: 1px;
+            padding: 40px 40px 20px;
+        }
+        .wrapper .header .logo img{
+            display: block;
+            margin: 0 auto 35px;
+        }
+        .wrapper .header .form .input_field{
+            margin-bottom: 5px;
+        }
+        .wrapper .header .form .input_field .input{
+            width: 100%;
+            background: #fafafa;
+            border: 1px solid #efefef;
+            font-size: 12px;
+            border-radius: 3px;
+            color: #262626;
+            padding: 10px;
+        }
+        .wrapper .header .form .input_field .input:focus{
+            border: 1px solid #b2b2b2;
+        }
+        .wrapper .header .form .btn{
+            margin: 10px 0;
+            background-color: rgb(0,149, 246);
+            border: 1px solid rgb(0,149, 246);
+            border-radius: 4px;
+            text-align: center;
+            padding: 5px;
+        }
+        .wrapper .header .form .btn a{
+            color: #fff;
+            display: block;
+        }
+        .wrapper .header .or{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 15px;
+            margin: 15px 0 20px;
+        }
+        .wrapper .header .or .line{
+            width: 105px;
+            height: 2px;
+            background: #efefef
+        }
+        .wrapper .header .or p{
+            color: #999;
+            font-size: 12px;
+        }
+        .wrapper .dif .fb{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper .dif .fb img{
+            width: 16px;
+            height: 16px;
+        }
+        .wrapper .dif  .fb a{
+            color: rgb(0,149, 246);
+            font-weight: 500;
+            margin-left: 10px;
+        }
+        .wrapper .dif .forgot{
+            font-size: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .wrapper .dif .forgot a{
+            color: rgb(0,149, 246);
+        }
+        .wrapper .signup{
+            margin: 10px 0 20px;
+            padding: 25px 40px;
+            text-align: center;
+            color: #262626;
+        }
+        .wrapper .signup a{
+            color: rgb(0,149, 246);
+        }
+        .wrapper .apps{
+            text-align: center;
+            color: #262626;
+        }
+        .wrapper .apps p{
+            margin-bottom: 20px;
+        }
+        .wrapper .apps a img{
+            width: 135px;
+            height: 40px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class = "header">
+        <img src = "img_1.png" alt = "Insta" id = "screen">
+    </div>
+    <div class="header">
+        <div class="top">
+            <div class="logo">
+                <img src="instagram.png" alt="instagram" style="width: 175px;">
+            </div>
+            <div class="form">
+                <div class="input_field">
+                    <input type="text" placeholder="Phone number, username, or email" class="input">
+                </div>
+                <div class="input_field">
+                    <input type="password" placeholder="Password" class="input">
+                </div>
+                <div class="btn"><a href="#">Log In</a></div>
+            </div>
+            <div class="or">
+                <div class="line"></div>
+                <p>OR</p>
+                <div class="line"></div>
+            </div>
+            <div class="dif">
+                <div class="fb">
+                    <img src="https://static.xx.fbcdn.net/rsrc.php/yB/r/2sFJRNmJ5OP.ico" alt="facebook">
+                    <a href = "https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Foidc%2F%3Fapp_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignupviafb%252F%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bprofile%2Blinking%26state%3DATApZxAUpnObr5D5H311sLHkY-0B5DcVmDJWCGGXlrR68MdoTGeWDA6cB4jjIlCLhcC3OGtX3bhXfSNemwpKzLyDANVc05sPUC2u41JxEvAdY330gDQMPCmouFXxk2vyKLv3H1mUncm5jjhjl-8hbtnIucaJ6GE0vORu3RLONExkgMxy9P_rrz8wZtGht2bqemYLvtjPdXBSlZBEdLF6GXFUOWsLCtAyNdgBpNWmXnM6Ak3piCI_jR1R_YsorRDoB3fd">Log in with Facebook</a>
+                </div>
+                <div class="forgot">
+                    <a href="https://www.instagram.com/accounts/password/reset/">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+        <div class="signup">
+            <p>Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/">Sign up</a></p>
+        </div>
+        <div class="apps">
+            <p>Get the app.</p>
+            <div class="icons">
+                <a href="#"><img src="microsoft.png" alt="microsoft"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D82C61F40-6645-4D44-A441-C92CE299C6B0%26utm_campaign%3DunifiedHome%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge%26original_referrer%3Dhttps://www.instagram.com/&pli=1"><img src="googleplay.png" alt="googleplay"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

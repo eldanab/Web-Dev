@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook - log in or sign up</title>
+</head>
+<style>
+    body{
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 12px;
+    }
+    input {
+        background: #FFFFFF repeat-x;
+        border: 1px solid #dddfe2;
+        color: #1d2129;
+        font-family: Helvetica, Arial, sans-serif;
+        height: 22px;
+        line-height: 16px;
+        vertical-align: middle;
+        font-size: 17px;
+        padding: 14px 16px;
+        width: 330px;
+        border-radius: 6px;
+        outline: none;
+        transition: border-color 0.1s;
+    }
+    input:focus {
+        border-color: #0866ff;
+        box-shadow: 0 0 0 2px #e7f3ff;
+        caret-color: #0866ff
+    }
+    .fb-root {
+        padding-bottom: 112px;
+        padding-top: 72px;
+        background: #f2f4f7;
+        min-width: 500px;
+        width: 100%
+    }
+    .main-screen {
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 980px;
+    }
+    .mc1 {
+        box-sizing: border-box;
+        margin-right: 0;
+        padding-right: 32px;
+        width: 580px;
+        display: inline-block;
+        padding-top: 100px;
+    }
+    .button2 {
+        padding-top: 6px;
+    }
+    #login {
+        background-color: #0866ff;
+        border: none;
+        border-radius: 6px;
+        font-size: 20px;
+        line-height: 48px;
+        padding: 0 16px;
+        width: 332px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        white-space: nowrap;
+        box-sizing: content-box;
+        position: relative;
+        text-align: center;
+        text-shadow: none;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    .button1{
+        padding-top: 6px;
+    }
+    .reg {
+        height: 456px;
+        width: 396px;
+    }
+    .reg-page {
+        border-top: none;
+        color: #1c1e21;
+        font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        padding-top: 0;
+        margin-top: 28px;
+        text-align: center;
+    }
+    .in-reg {
+        padding-bottom: 24px;
+        padding-top: 10px;
+        text-align: center;
+        background-color: #fff;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
+        box-sizing: border-box;
+        margin: 40px 0 0;
+        width: 396px;
+    }
+    .hr {
+        align-items: center;
+        border-bottom: 1px solid #dadde1;
+        display: flex;
+        margin: 20px 16px;
+        text-align: center;
+    }
+    .fp {
+        margin-top: 16px;
+    }
+    #id_fp {
+        color: #0866ff;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    #new-acc{
+        border: none;
+        border-radius: 6px;
+        box-sizing: content-box;
+        color: white;
+        font-size: 17px;
+        line-height: 48px;
+        padding: 0 16px;
+        background-color: #42b72a;
+        font-weight: bold;
+        position: relative;
+        text-align: center;
+        text-shadow: none;
+        vertical-align: middle;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    @media only screen and (max-width: 900px) {
+        .main-screen {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .mc1 {
+            margin: 0 auto;
+            padding: 0;
+        }
+        .mc2 {
+            float: none;
+            margin: 0 auto;
+        }
+    }
+    @media only screen and (max-width: 1075px) {
+        .main-screen {
+            height: 496px;
+            margin: 0 40px;
+            width: auto;
+        }
+        .mc1{
+            width: 400px;
+        }
+        .mc2 {
+            float: right;
+        }
+    }
+    a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+    a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .cp {
+        color: black;
+        font-weight: bold;
+    }
+    .mc2 {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .logo {
+        padding: 0 0 20px 0;
+    }
+    img {
+        height: 106px;
+        margin: -28px;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+    @media only screen and (max-width: 1075px) {
+        h2 {
+            font-size: 24px;
+            line-height: 28px;
+            width: auto;
+
+        }
+    }
+    @media only screen and (max-width: 900px) {
+        h2 {
+            padding: 0;
+        }
+    }
+    h2 {
+        font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        font-size: 28px;
+        font-weight: normal;
+        line-height: 32px;
+        width: 500px;
+        color: #1c1e21;
+        display: inline-block;
+        margin: 0px;
+    }
+
+    .input-line {
+        font-size: 17px;
+        width: 364px;
+        display: inline-block;
+        margin: auto;
+        padding: 6px 0;
+    }
+
+</style>
+<body>
+<div class ="fb-root">
+    <div class="main-screen">
+        <div class="mc1">
+            <div class = "logo">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="">
+            </div>
+            <h2>Connect with friends and the world around you on Facebook.</h2>
+        </div>
+        <div class="mc2">
+            <div class = "reg">
+                <div class = "in-reg">
+                    <form>
+                        <div>
+                            <div class = "input-line">
+                                <input type = "text"  placeholder = "Email or phone number">
+                            </div>
+                            <div class = "input-line">
+                                <input type = "password"  placeholder = "Password">
+                            </div>
+                        </div>
+                        <div class = "button1">
+                            <button id = "login" type = "submit">Log In</button>
+                        </div>
+                        <div class = "fp"><a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzM4NDAxNTAzLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&amp;ars=facebook_login&amp;next" id = "id_fp">Forgot password?</a></div>
+                        <div class = "hr"></div>
+                        <div class = "button2">
+                            <a role = "button" href = "https://www.facebook.com/r.php?entry_point=login" id = "new-acc">Create new account</a>
+                        </div>
+                    </form>
+                </div>
+                <div class = "reg-page">
+                    <a href="https://www.facebook.com/pages/create/?ref_type=registration_form" class="cp">Create a Page</a>
+                    for a celebrity, brand or business.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

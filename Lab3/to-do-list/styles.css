@@ -1,0 +1,66 @@
+body {
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.heading {
+    height: 60px;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 70px;
+}
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+.deleted {
+    text-decoration: line-through;
+    color: gray;
+    font-style: italic;
+}

@@ -1,0 +1,45 @@
+.cat-section {
+  display: block;
+  width: 500px;
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  margin: 20px 50px;
+  background-color: #f2faff;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.5em;
+}
+
+.all-categ {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.5em;
+  color: #404142;
+
+}
+
+.category-list {
+  display: block;
+  padding: 15px 30px;
+  font-family: "Calibri Light";
+}
+
+.list-element {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.category-element {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.category-element:hover {
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+

@@ -1,0 +1,77 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 50%;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #c8665d;
+  outline: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #c8665d;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+  margin: 10px 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #f2faff;
+}
+
+button {
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 12px 25px;
+  margin: 10px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  color: #c8665d;
+}
+
+
+
+.goBack {
+  background-color: #444;
+  color: white;
+}
+
+.goBack:hover {
+  background-color: #222;
+}

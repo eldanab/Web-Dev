@@ -1,0 +1,61 @@
+.heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .vacancy-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .company-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .company-item {
+    margin: 10px 0;
+  }
+  
+  .company-button {
+    background-color: #9cc99d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .company-button:hover {
+    background-color: #45a049;
+  }
+  
+  .vacancy-section {
+    margin-top: 20px;
+  }
+  
+  .vacancy-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .vacancy-item {
+    padding: 8px;
+    border-bottom: 1px solid #a5a5a5;
+  }
+  
+  .vacancy-item:last-child {
+    border-bottom: none;
+  }
+  
+  .vacancy-section {
+    background-color: #dedede;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
